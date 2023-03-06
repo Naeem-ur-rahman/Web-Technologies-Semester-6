@@ -1,0 +1,43 @@
+prodcut, usage, development
+
+
+1.Product
+
+content: website text on website-non random-extact-gramerly correct
+         Document centric character and multimediality
+         Quality demand (user needs are fulfilled)
+         Hypertext by nature non-linear (navigation flow)
+         Disoriantation and cognitive overload (easy)
+
+Presentation:UserINterface
+             Asthetics (look and feel)colors and theme
+             Self Explaination 
+
+2.Usage
+ 
+Soical Context:
+              Spontaneity (User use the Website for maximum amount of time)
+              MultiCultural
+Technical Context: Network and devices
+              Quality Services (memory,bandwidth,etc)
+              MultiPlatform delivery (operate on every platform)
+Natural Context:Location or Time
+               Globality
+               Avalability
+
+3.Development
+
+Team:
+     Multidisciplinarily
+     Young average age
+     Community development         
+
+
+
+
+
+
+
+
+
+

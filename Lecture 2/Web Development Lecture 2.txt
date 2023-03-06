@@ -1,0 +1,6 @@
+Hyper Text: non linear movement among the web pages
+Markup: range define (like bold and line) we have tags
+
+Angular Braket <>;
+Pair Tags:   bold
+Sigular Tag: next line
