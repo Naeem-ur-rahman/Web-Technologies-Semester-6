@@ -15,11 +15,36 @@
         .center-text{
             text-align: center;
         }
+        .box{
+            width: 400px;
+        }
+        .button{
+            background-color: blue; 
+            font-weight: bold;
+            color: yellowgreen; 
+            padding: 4px;
+            width: 100px;
+            height: 30px;
+            margin: 5px;
+        }
     </style>
 </head>
 <body>
+    <div style="display:flex;justify-content: space-between;" >
+        <div>
+            <img src="Government of Pakistan Logo.jpg" alt="Government of Pakistan Logo" height="75px" width="75px">
+        </div>
+        <div style="text-align: center;font-weight: bold;font-size:20px;">
+            Government of Pakistan <br>
+            Accountant General <br>
+            Khyber Pakhtukhwa <br>
+        </div>
+        <div>
+
+        </div>
+    </div>
     <h1 align="center" style="background-color: darkslateblue; font-size: 20px;">PENSIOR'S IDENTITY CARD FORM</h1>
-    <form action="/action.php" method="post">
+    <form action="/action.php" method="get" target="_blank">
          <fieldset>
         <div style="display: flex; justify-content:space-around">
            
@@ -27,7 +52,7 @@
                 <label for="personal_no">Personal No:</label>
                 <input type="text" name="personal_no" size="60" class="border-bottom">
                 <label for="designation">Retired as/Designation:</label>
-                <input type="text" name="designation" size="70" class="border-bottom"><br><br>
+                <input type="text" name="designation" size="60" class="border-bottom"><br><br>
                 <label for="date-retirement">Date of Retirement:</label>
                 <input type="text" name="date-retirement" size="60" class="border-bottom">
                 <label for="BPS">BPS:</label>
@@ -175,6 +200,70 @@
                 </ol>    
             </div>
             </fieldset>
+            <br>
+            <div style="display: flex;justify-content: space-between;">
+                <fieldset>
+                    <div class="box">
+                        <p>I here by certify that the information provided above is correct to the best of my knowleadge</p>
+                            <label for="signature_1">Signature: </label>
+                            <input type="text" name="signature_1" class="border-bottom" size="40"><br><br>
+                            <label for="name_s">Name: </label>
+                            <input type="text" name="name_s" class="border-bottom" size="40">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="box">
+                        <p style="font-weight: bold;">To be verified by a Gazetted Officer:</p>
+                        <label for="Designation_officer">Designation: </label>
+                        <input type="text" name="Designation_officer" class="border-bottom" size="40"><br><br>
+                        <label for="signature_officer">Signature: </label>
+                        <input type="text" name="signature_officer" class="border-bottom" size="40"><br><br>
+                        <label for="cnic_officer">CNIC: </label>
+                        <input type="text" name="cnic_officer" class="border-bottom" size="40"><br><br>
+                        <label for="contact_officer">Contact No: </label>
+                        <input type="text" name="contact_officer" class="border-bottom" size="40">
+                    </div>
+                </fieldset>
+            </div>
+            <h1 align="center" style="background-color: darkslateblue; font-size: 20px;">FOR OFFICE ONLY</h1>
+            <fieldset>
+                <div>
+                    <div style="display: flex;justify-content: space-between;">
+                        <div>
+                            <label for="enteredby">Entered By: </label>
+                            <input type="text" name="enteredby" class="border-bottom" size="40">
+                        </div>
+                        <div>
+                            <label for="signature-enter">Signature: </label>
+                            <input type="text" name="signature-enter" class="border-bottom" size="40">
+                        </div>
+                        <div>
+                            <label for="date-enter"> Date: </label>
+                            <input type="text" name="date-enter" class="border-bottom" size="40">
+                        </div>
+                    </div>
+                    <br>
+                    <div style="display: flex;justify-content: space-between;">
+                        <div>
+                            <label for="checkedby">Checked By: </label>
+                            <input type="text" name="checkedby" class="border-bottom" size="40">
+                        </div>
+                        <div>
+                            <label for="signature-check">Signature: </label>
+                            <input type="text" name="signature-check" class="border-bottom" size="40">
+                        </div>
+                        <div>
+                            <label for="date-check"> Date: </label>
+                            <input type="text" name="date-check" class="border-bottom" size="40">
+                        </div>
+                    </div>
+                </div>
+            </fieldset> 
+            <div style="display: flex; justify-content: right;">
+                <input type="submit" name="submit" value="SUBMIT" class="button" >
+                <input type="reset" name="reset" value="RESET"  class="button">
+            </div>
+            
     </form>
 </body>
 </html>
