@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COMSTAS ADDMISSION FORM</title>
+</head>
+<body>
+
+<table cellspacing="70px">
+<tr>
+<td ><img src="Comsats.png" alt="Comsats logo" width="100p" length="100p"><td>
+<td><h1 align="center"> COMSATS Universty Islamabad, Sahiwal Campus</h1><h3 align="center">COMSATS Road, off G.T Road, Sahiwal. Phone: 040-4305001-5,9200100</h3><td>
+</tr>
+</table>
+<form action="/action.php" method="get">
+<fieldset>
+<legend> SECTION ONE:(Personal Details)</legend>
+
+<label for="Name">Name of Applicant:</label>
+<input type="text" name="Name" value="" size="50"></input>
+<br><br>
+<label for="F-Name">Father's Name:</label>
+<input type="text" name="F-Name" value="" size="50"></input>
+<br><br>
+<label for="Birth-Date">Date of Birth:</label>
+<input type="date" name="Birth-Date" value="" ></input>
+.....
+<label for="Gender">Gender:</label>
+<input type="radio" name="Gender" value="Male">Male</input>
+<input type="radio" name="Gender" value="Female">Female</input>
+
+<br><br>
+<label for="Cnic">CNIC No:</label>
+<input type="text" name="Cnic" placeholder="XXXXX" maxlength="5" size="5"></input>-
+<input type="text" name="Cnic" placeholder="XXXXXXX" maxlength="7" size="7"></input>-
+<input type="text" name="Cnic" placeholder="X" maxlength="1" size="1"></input>
+<br><br>
+<label for="Marital-Status">Marital Status:</label>
+<input type="radio" name="Marital-Status" value="Single">Single</input>
+<input type="radio" name="Marital-Status" value="Married">Married</input>
+<input type="radio" name="Marital-Status" value="Divorsed">Divorsed</input>
+.....
+<label for="Nationality">Nationality:</label>
+<input type="text" name="Nationality" value="" size="50"></input>
+<br><br>
+<label for="Religon">Religon:</label>
+<input type="text" name="Religon" size="30"></input>
+<label for="Blood">Blood Group:</label>
+<input type="text" name="Blood" size="30"></input>
+<label for="Domicile">Domicile (District):</label>
+<input type="text" name="Domicile" size="30"></input>
+<br><br>
+<label for="Address">Current Postal Address:</label>
+<input type="text" name="Address" size="150"></input>
+<br><br>
+<label for="Telephone">Telephone:</label>
+<input type="text" name="Telephone" size="40"></input>
+<label for="Mobile">Mobile:</label>
+<input type="text" name="Mobile" size="40" placeholder="03XX-XXXXXXX"></input>
+<label for="Email">Email:</label>
+<input type="text" name="Email" size="40" placeholder="@gmail.com"></input>
+<br><br>
+<label for="P-Address">Permanant Address:</label>
+<input type="text" name="P-Address" size="150"></input>
+<br><br>
+<label for="P-Telephone">Telephone:</label>
+<input type="text" name="P-Telephone" size="40"></input>
+<label for="P-Mobile">Mobile:</label>
+<input type="text" name="P-Mobile" size="40" placeholder="03XX-XXXXXXX"></input>
+<label for="P-Email">Email:</label>
+<input type="text" name="P-Email" size="40" placeholder="@gmail.com"></input>
+
+</fieldset>
+
+<fieldset>
+<legend> SECTION TWO:(Program Preference)</legend>
+<p align="center">Please Mark 1,2 and 3 as your program preferences</p>
+
+Graduate Programs::::::::::::::::::::::::
+
+<label for="MS-Bioscience">MS(Bio Science):</label>
+<input type="number" name="MS-Bioscience" min="1" max="3" ></input>
+<label for="MS-Managmentscience">MS(Managment Science):</label>
+<input type="number" name="MS-Managmentscience" min="1" max="3" ></input>
+<label for="MS-Mathmatics">MS(Math Matics):</label>
+<input type="number" name="MS-Mathmatics" min="1" max="3" ></input>
+</fieldset>
+
+<fieldset>
+<legend> SECTION THREE(A):Education Details</legend>
+<table border="1px" align="center" cellspacing="3px" cellpadding="4px" >
+<tr bgcolor="purple">
+<th>Certificate/Degree Major</th>
+<th> Subjects</th>
+<th>Passing Year</th>
+<th>Board/Universty</th>
+<th>Marks Obtained</th>
+<th>Marks Maximum</th>
+</tr>
+
+<tr>
+<td>SCC/Matric/O-Level/Equivalent</td>
+<td><input type"text" name="Matric-Subjects" size="30"></input> </td>
+<td><input type"number" name="Matric-PassingYear" size="10" maxlength="4" placeholder="20XX"></input> </td>
+<td><input type"text" name="Matric-Board" size="25"></input></td>
+<td><input type"number" name="Matric-MarksObtained" size="10" maxlength="4" ></input> </td>
+<td><input type"number" name="Matric-MarksMaximum" size="10" maxlength="4" placeholder="1100"></input> </td>
+</tr>
+
+<tr>
+<td>HSCC/A-Level/Equivalent <sub>(combined)</sub></td>
+<td><input type"text" name="A-Level-Subjects" size="30"></input> </td>
+<td><input type"number" name="A-Level-PassingYear" size="10" maxlength="4" placeholder="20XX"></input> </td>
+<td><input type"text" name="A-Level-Board" size="25"></input></td>
+<td><input type"number" name="A-Level-MarksObtained" size="10" maxlength="4" ></input> </td>
+<td><input type"number" name="A-Level-MarksMaximum" size="10" maxlength="4" placeholder="1100"></input> </td>
+</tr>
+
+<tr>
+<td>BA/BSc/Equivalent/14 Years</td>
+<td><input type"text" name="BSC-Subjects" size="30"></input> </td>
+<td><input type"number" name="BSC-PassingYear" size="10" maxlength="4" placeholder="20XX"></input> </td>
+<td><input type"text" name="BSC-Board" size="25"></input></td>
+<td><input type"number" name="BSC-MarksObtained" size="10" maxlength="4" ></input> </td>
+<td><input type"number" name="BSC-MarksMaximum" size="10" maxlength="4" ></input> </td>
+</tr>
+
+<tr>
+<td>Master/Equivalent/16 Years</td>
+<td><input type"text" name="Master-Subjects" size="30"></input> </td>
+<td><input type"number" name="Master-PassingYear" size="10" maxlength="4" placeholder="20XX"></input> </td>
+<td><input type"text" name="Master-Board" size="25"></input></td>
+<td><input type"number" name="Master-MarksObtained" size="10" maxlength="4" ></input> </td>
+<td><input type"number" name="Master-MarksMaximum" size="10" maxlength="4" ></input> </td>
+</tr>
+
+<tr>
+<td>Any Other</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+
+</table>
+</fieldset>
+
+<fieldset>
+<legend> SECTION THREE(B):NTS (GAT) Details</legend>
+<table border="1px" align="center" cellspacing="3px" cellpadding="4px" >
+<tr bgcolor="purple" >
+
+<th>Date when test taken:</th>
+<th> GAT Roll no.</th>
+<th>GAT Test Type</th>
+<th>GAT SCORE</th>
+</tr>
+
+<tr>
+<td><input type"date" name="GAT-Date"> </input></td>
+<td><input type"text" name="GAT-Rollno" size="30"></input> </td>
+<td><input type"text" name="GAT-Testtype" size="30"></input> </td>
+<td><input type"number" name="GAT-Score" size="25" maxlength="4"></input></td>
+</tr>
+</table>
+
+<p><b>Note:</b> Appropriate GAT Test with Minimum score of 50 obtained within last two year is acceptable for this application.</p>
+</fieldset>
+
+<fieldset>
+<legend>SECTION FOUR:</legend>
+<label for="hostel">Hostel Accomodation Required:</label>
+<input type="radio" name="hostel" value="Yes">Yes</input>
+<input type="radio" name="hostel" value="No">No</input>---------------------------------------------
+<label for="transport">Transport Fasility Required:</label>
+<input type="radio" name="transport" value="Yes">Yes</input>
+<input type="radio" name="transport" value="No">No</input>
+</fieldset>
+<input type="submit" name="submit" value="SUBMIT"></input>
+<input type="reset" name="reset" value="RESET"></input>
+
+</form>
+</body>
+</html>
