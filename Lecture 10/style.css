@@ -1,0 +1,52 @@
+h1{
+   font-size:50px;
+   text-align:center;
+}
+header{
+       height:10vh;
+       background-color:blue;
+}
+nav{
+	height:10vh;
+	width:100vw;
+	background-color:aqua;
+	display:flex;
+	justify-content:center;
+        align-items:center;
+	position:fixed;
+	
+}
+nav ul{
+	display:flex;
+	list-style:none;
+	font-size:24px;
+	text-decoration:underline;
+}
+nav ul li{
+	padding:10px;
+	cursor:pointer;
+
+}
+#content{
+	height:120vh;
+	background-color:magenta;
+	
+}
+footer{
+	height:20vh;
+	width:100vw;
+	background-color:rgb(224,244,144);
+	text-align:center;
+	font-size:24px;	
+	font-weight:bold;
+}
+
+ol{
+	padding: 5vh 2vw 2vh 10vw;
+	
+	font-size:20px;
+}
+
+li{
+	padding:4px;
+}
