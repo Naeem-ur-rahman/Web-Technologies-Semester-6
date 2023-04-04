@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#qualified_doctors_section{
+    height: 160vh;
+    background-color: white;
+}
+#upsection_qualifed_doctors{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#downsection_qualifed_doctors1{
+    height: 60vh;
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+#downsection_qualifed_doctors2{
+    height: 60vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    display: flex;
+}
+#search_doctors{
+    height: 20vh;
+}
+.box2{
+    height: 52vh;
+    width:30vw;
+    margin: 4vh;
+    border-radius: 1rem;
+    background-color:  rgb(242, 243, 243);
+    position: relative;
+    transition-delay: 1s;
+    
+}
+.box2:hover{
+    
+}
+.profileupper{
+    height: 28vh;
+}
+.profilelower{
+    height: 24vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.doctor_name{
+    font-size: 25px;
+    font-weight: bolder;
+    padding-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.doctor_specification{
+    display: flex;
+    font-size: 15px;
+    font-family: sans-serif;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.doctor_hours{
+    display: flex;
+    font-size: 15px;
+    font-family: sans-serif;
+    justify-content: space-between;
+    padding: 1%;
+    color: grey;
+}
+.doctor_address{
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 1%;
+    margin-bottom: 2%;
+    color: grey;
+}
+.viewprofilebutton{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-family: monospace;
+    color: rgb(108, 108, 248);
+    border-color: rgb(108, 108, 248);
+    background-color:  rgb(242, 243, 243);
+    position: absolute;
+    top: 46vh;
+    left: 1vw;
+}
+.Profile_image{
+    height: 28vh;
+}
+
+#search_doctors{
+    height: 10vh;
+    width: 80vw;
+    background-color: rgb(242, 243, 243);
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#find{
+    border-right: 2px solid grey;
+    padding-right: 5vw;
+}
+#searchicon{
+    height: 2.5vh;
+}
+#locationicon{
+    height: 2.5vh;
+}
+#location{
+    border-right: 2px solid grey;
+    padding-right: 5vw;
+}
+#searchbutton{
+    width: 8vw;
+    height: 7vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+.shorttext{
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 1%;
+    color: grey;
+}
+.largetext{
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 1%;
+    color: blue;
+    font-weight: bold;
+}
