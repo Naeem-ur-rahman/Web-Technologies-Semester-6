@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    min-height: 20vh;
+    background-color: black;
+    border: 2px solid red;
+   
+    
+}
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+    flex: 1 1 1;
+}
+.container-block{
+    height: 20vh;
+    background-color: black;
+    border: 2px solid red;
+    display: block;
+}
+.container-inlineblock{
+    height: 20vh;
+    background-color: black;
+    border: 2px solid red;
+    display: inline-block;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-scroll{
+    overflow: scroll;
+}
+.box{
+    min-height: 100px;
+    min-width:100px;
+    height: 120px;
+    width: 120px;
+    background-color: whitesmoke;
+    border: 2px solid blue;
+    margin: 5px;
+}
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+    top:2vh;
+    left: 2vw;
+}
+.opacity{
+    opacity: 0.5;
+}

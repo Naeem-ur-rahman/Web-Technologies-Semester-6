@@ -1,0 +1,37 @@
+nav{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #eee;
+    margin-top: 1em;
+    padding-top: .5em;
+}
+.visually-hidden{
+    border:0;
+    clip: rect(0,0,0,0);
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+.pagination{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.pagination li{
+    margin: 0 1px;
+}
+.pagination a{
+    display: block;
+    padding: .5em 1em;
+    border: 1pxsolid #999;
+    border-radius:.2em;
+    text-decoration: none;
+}
+.pagination a[aria-current="page"]{
+    background-color: #333;
+    color: #fff;
+}
