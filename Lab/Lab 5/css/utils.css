@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: center;
 }
+.flex{
+    display: flex;
+}
 .margin-2{
     margin: 5px;
 }

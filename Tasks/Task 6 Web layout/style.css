@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color:blue;
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+	margin: 2vh 5vw;
+}
+header{
+	height:15%;
+	display: flex;
+}
+.logo{
+	width: 20%;
+	background-color:yellow;
+}
+.header{
+	width: 80%;
+	background-color:red;
+}
+.index-main{
+	height:72%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+	gap:10px;
+}
+.login{
+	height:50%;
+	width:95%;
+	background-color:darkgreen;
+	position:relative;
+}
+.signin{
+	height:50%;
+	width:95%;
+	background-color:darkgreen;
+	position:relative;
+}
+footer{
+	height: 10%;
+	background-color: coral;
+}
+
+.message-main{
+	height:72%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	gap:10px;
+}
+.user{
+	height: 22%;
+	display:flex;
+}
+.userinfo{
+	width: 20%;
+	background-color:green;
+}
+.userdata{
+	width: 80%;
+	background-color:aqua;
+}
+.body{
+	height:85%;
+	display:flex;
+	gap:10px
+}
+.action{
+	width:30%;
+	background-color:darkblue;
+}
+.message-pannel{
+	width:70%;
+	background-color:blue;
+	border: 2px solid black;
+	padding:5px;
+	overflow:scroll;
+}
+.scrollbar-hidden::-webkit-scrollbar{
+    display: none;
+    width: 0 !important
+}
+.message{
+	display:flex;
+	height:20%;
+	margin:5px;
+}
+.message-profile{
+	width:20%;
+	background-color:pink;
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 10px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-family: 'Alkatra',cursive;
+	color :darkslategray;
+}
+.message-data{
+	width:80%;
+	background-color:green;
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 10px;
+	font-family: 'Alkatra',cursive;
+	color :white;
+}
+.btn{
+	position:absolute;
+	height:15%;
+	width:10%;
+	right:5%;
+	bottom:10%;
+	color:white;
+	background-color:red;
+	border:none;
+	border-radius:3px;
+	font-family: 'Alkatra', cursive;
+	cursor:pointer;
+}
