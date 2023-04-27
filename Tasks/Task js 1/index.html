@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mul & Div</title>
+    <link rel="stylesheet" href="js_utility.css">
+</head>
+
+<body>
+    <div class="card">
+        <h3>Enter 1st Number---: </h3>
+        <h3>Enter 2nd Number-: </h3>
+        <h3>Multiply-----: </h3>
+        <h3>Division-----: </h3>
+        <button id="btn">Calculate</button>
+    </div>
+</body>
+<script>
+
+    mulDiv = () => {
+        again();
+        var x = prompt("Enter 1st Number");
+        var y = prompt("Enter 2nd Number");
+        var mul = x * y;
+        var div = x / y;
+        let ele = document.getElementsByTagName('h3');
+        ele[0].append(x);
+        ele[1].append(y);
+        ele[2].append(mul);
+        ele[3].append(div);
+    }
+
+    again = () => {
+        let element = document.getElementsByTagName('h3');
+
+        element[0].innerHTML = "Enter 1st Number---: ";
+        element[1].innerHTML ="Enter 2nd Number-: ";
+        element[2].innerHTML = "Multiply-----: ";
+        element[3].innerHTML ="Division-----: ";
+    }
+
+    document.getElementById('btn').addEventListener('click', mulDiv);
+
+</script>
+
+</html>

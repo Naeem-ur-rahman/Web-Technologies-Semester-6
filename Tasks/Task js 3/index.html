@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+    <link rel="stylesheet" href="js_utility.css">
+</head>
+
+<body>
+    <div class="card">
+
+        <form id="myForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"><br><br>
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </div>
+    <div class="card" id="card2">
+        <h3></h3>
+        <h3></h3>
+    </div>
+</body>
+<script>
+
+    function getNames() {
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        return { firstName, lastName };
+    }
+
+    document.getElementById("myForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const { firstName, lastName } = getNames();
+        document.getElementById('card2').style.display = 'block';
+        var ele = document.getElementsByTagName('h3');
+        ele[0].innerHTML = ("First name : " + firstName);
+        ele[1].innerHTML = ("Last name : " + lastName);
+    });
+</script>
+
+</html>

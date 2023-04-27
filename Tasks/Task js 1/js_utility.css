@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(13, 13, 71);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    margin: .5rem;
+    margin-left: 3rem;
+}
+
+#btn {
+    margin-left: 3rem;
+    margin-bottom: .5rem;
+    padding: .4rem 1rem;
+}
+.card{
+    margin: 12rem;
+    border: 1px solid white;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    align-items: flex-start;
+}

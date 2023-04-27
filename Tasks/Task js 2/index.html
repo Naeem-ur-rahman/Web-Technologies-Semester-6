@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Sum Fun</title>
+    <link rel="stylesheet" href="js_utility.css">
+</head>
+
+<body>
+    <h1>JS Sum TASK</h1>
+    <div class="card">
+        <h3>Enter 1st Number---: </h3>
+        <h3>Enter 2nd Number-: </h3>
+        <h3>Sum-----: </h3>
+        <h3 class="red"></h3>
+        <button id="btn">Calculate</button>
+    </div>
+</body>
+<script>
+    sumFun = () => {
+        again();
+        var x = parseInt(prompt("Enter 1st Number"));
+        var y = parseInt (prompt("Enter 2nd Number"));
+        var sum = parseInt(x + y);
+        let ele = document.getElementsByTagName('h3');
+        ele[0].append(x);
+        ele[1].append(y);
+        if (x === y) {
+            sum *= 3;
+            ele[2].append(sum);
+            ele[3].append("Equal Case (main)");
+        } else {
+            ele[2].append(sum);
+            ele[3].append("Simple");
+        }
+    }
+
+    again = () => {
+        let element = document.getElementsByTagName('h3');
+
+        element[0].innerHTML = "Enter 1st Number---: ";
+        element[1].innerHTML = "Enter 2nd Number-: ";
+        element[2].innerHTML = "Sum-----: ";
+        element[3].innerHTML = "";
+    }
+
+    document.getElementById('btn').addEventListener('click', sumFun);
+</script>
+
+</html>

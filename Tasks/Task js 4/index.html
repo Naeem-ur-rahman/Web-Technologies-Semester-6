@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Color</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 18px;
+            border-radius: .2rem;
+            width: 300px;
+            text-align: justify;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="myPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus quidem molestiae officia
+        maiores,
+        dignissimos nesciunt ad magni alias voluptas voluptatem, iusto amet, id dolor. Laudantium aperiam possimus,
+        ullam corporis minus rerum nesciunt repellendus nam architecto placeat porro suscipit voluptatum voluptas vero.
+        Iste, temporibus consectetur.</p>
+    <br>
+    <br>
+    <div>
+        <div>
+            <label for="backgroundColorInput">Choose Background Color:</label>
+            <input type="color" id="backgroundColorInput"><br><br>
+        </div>
+        <div>
+            <label for="colorInput">Choose Color:</label>
+            <input type="color" id="colorInput"><br><br>
+        </div>
+    </div>
+</body>
+<script>
+    const backgroundColorInput = document.getElementById("backgroundColorInput");
+
+    const colorInput = document.getElementById("colorInput");
+    const para = document.getElementById("myPara");
+
+    backgroundColorInput.addEventListener("input", () => {
+        para.style.backgroundColor = backgroundColorInput.value;
+    });
+
+    colorInput.addEventListener("input", () => {
+        para.style.color = colorInput.value;
+    });
+</script>
+
+</html>

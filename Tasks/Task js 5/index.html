@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down List</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="fruitList">Select a fruit:</label>
+    <select id="fruitList">
+        <option value="">--Please choose an option--</option>
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+        <option value="orange">Orange</option>
+        <option value="pear">Pear</option>
+    </select><br><br>
+    <button onclick="removeItem()">Remove Selected Item</button>
+</body>
+<script>
+    function removeItem() {
+        const fruitList = document.getElementById("fruitList");
+        const selectedIndex = fruitList.selectedIndex;
+
+        if (selectedIndex !== -1) {
+            fruitList.remove(selectedIndex);
+        }
+    }
+</script>
+
+</html>
