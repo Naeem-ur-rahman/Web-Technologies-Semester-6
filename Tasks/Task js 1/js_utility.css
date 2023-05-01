@@ -8,6 +8,8 @@ body {
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 h3 {
@@ -21,11 +23,11 @@ h3 {
     padding: .4rem 1rem;
 }
 .card{
-    margin: 12rem;
     border: 1px solid white;
     padding: .5rem;
     display: flex;
     flex-direction: column;
-    min-width: 400px;
+    width: 400px;
+    min-width: 300px;
     align-items: flex-start;
 }

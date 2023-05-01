@@ -1,13 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: rgb(13, 13, 71);
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 
 h3 {
@@ -16,19 +20,20 @@ h3 {
 }
 
 #btn {
-
     margin-bottom: .5rem;
     padding: .4rem 1rem;
 }
-.card{
-    margin: 12rem;
+
+.card {
+    margin: 20px;
     border: 1px solid white;
     padding: .5rem;
     display: flex;
     flex-direction: column;
-    min-width: 400px;
+    min-width: 300px;
     align-items: flex-start;
 }
-#card2{
+
+#card2 {
     display: none;
 }
