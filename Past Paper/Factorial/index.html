@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #btn {
+            color: white;
+            border: none;
+            background-color: black;
+            margin: auto;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 23px;
+            width: 30vw;
+            box-shadow: 5px 5px rgba(38, 36, 36, 0.218);
+            cursor: pointer;
+            transition: .5s ease;
+        }
+
+        #btn:hover {
+            transform: scale(120%);
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Factorial</button>
+</body>
+<script>
+    function fact() {
+        n = prompt('Enter the Number');
+        let fac = 1;
+        for (i = 2; i <= n; i++) {
+            fac *= i;
+        }
+        alert("Factorial : " + fac);
+    }
+    document.getElementById('btn').addEventListener('click', fact);
+</script>
+
+</html>
