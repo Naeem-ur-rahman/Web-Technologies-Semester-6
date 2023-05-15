@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #btn {
+            color: white;
+            border: none;
+            background-color: black;
+            margin: auto;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 23px;
+            width: 30vw;
+            box-shadow: 5px 5px rgba(38, 36, 36, 0.218);
+            cursor: pointer;
+            transition: .5s ease;
+        }
+
+        #btn:hover {
+            transform: scale(120%);
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Table</button>
+</body>
+<script>
+    function table() {
+        n = prompt('Enter the Number');
+        alert(print(n))
+        function print(n){
+            let str='';
+            for(i =1;i<=10;i++){
+               str += (n + '*'+ i + '=' + (n*i))+'\n'.toString(); 
+            }
+            return str;
+        }
+    }
+    document.getElementById('btn').addEventListener('click', table);
+</script>
+
+</html>
