@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Date</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .btn {
+            color: white;
+            border: none;
+            background-color: black;
+            margin: auto;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 23px;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: blue;
+        }
+        .container{
+            display: grid;
+            gap: 1.1rem;
+        }
+        #text{
+            display: block;
+            height: 2.2rem;
+            border-radius: 0.2rem;
+            padding: 0.3rem;
+            width: 300px;
+            font-size: 1rem;
+            text-align: center;
+        }
+        @media (width < 430px)  {
+            .container {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn" onclick="click()">Display Date</button>
+        <input type="text" id="text" placeholder="Current date">
+    </div>
+    <script>
+        function click(){
+            console.log("clicked");
+            const date = new Date();
+            const ele = document.getElementById('text');
+            ele.value = date.getDate();
+        }
+    </script>
+</body>
+
+</html>
