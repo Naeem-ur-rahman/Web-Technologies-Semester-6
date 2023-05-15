@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
         }
-        .btn {
+        #btn {
             color: white;
             border: none;
             background-color: black;
@@ -50,16 +50,17 @@
 
 <body>
     <div class="container">
-        <button class="btn" onclick="click()">Display Date</button>
+        <button id="btn">Display Date</button>
         <input type="text" id="text" placeholder="Current date">
     </div>
     <script>
-        function click(){
-            console.log("clicked");
+        function clicked(){
             const date = new Date();
             const ele = document.getElementById('text');
             ele.value = date.getDate();
         }
+
+        document.getElementById('btn').addEventListener('click', clicked);
     </script>
 </body>
 
