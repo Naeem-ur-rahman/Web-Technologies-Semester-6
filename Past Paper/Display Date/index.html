@@ -53,15 +53,16 @@
         <button id="btn">Display Date</button>
         <input type="text" id="text" placeholder="Current date">
     </div>
+</body>
     <script>
         function clicked(){
             const date = new Date();
             const ele = document.getElementById('text');
-            ele.value = date.getDate();
+            str = date.getDate().toString() +'-'+ (date.getMonth()+1).toString()+'-'+ date.getFullYear().toString();
+            ele.value = str;
         }
 
         document.getElementById('btn').addEventListener('click', clicked);
     </script>
-</body>
 
 </html>
