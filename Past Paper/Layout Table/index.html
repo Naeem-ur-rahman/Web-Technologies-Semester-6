@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table{
+            width: 95vw;
+            height: 50vh;
+        }
+        td{
+            text-align: end;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <th colspan="2" rowspan="4"></th>
+            <th colspan="2">Type</th>
+        </tr>
+        <tr>
+            <th>Residential Customer</th>
+            <th>Business Customer</th>
+        </tr>
+        <tr>
+            <th>Expenditures</th>
+            <th>Expenditures</th>
+        </tr>
+        <tr>
+            <th>Sum</th>
+            <th>Sum</th>
+        </tr>
+        <tr>
+            <th>Region</th>
+            <th>Divison</th>
+            <td rowspan="2">7477</td>
+            <td rowspan="2">5129</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Northeast</th>
+            <th>New England</th>
+        </tr>
+        <tr>
+            <th>Middle Atlantic</th>
+            <td>19379</td>
+            <td>15078</td>
+        </tr>
+        <tr>
+            <th rowspan="2">West</th>
+            <th>Mountain</th>
+            <td>4560</td>
+            <td>45345</td>
+        </tr>
+        <tr>
+            <th>Pasific</th>
+            <td>13959</td>
+            <td>12619</td>
+        </tr>
+    </table>
+</body>
+</html>
