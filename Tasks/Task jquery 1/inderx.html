@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Task 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>JQuery</h1>
+    </div>
+    <div>
+        <h1>Hide</h1>
+    </div>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <main>
+        <p id="i">This is the body1.</p>
+        <p class="o">This is the body2.</p>
+        <p>This is the body3.</p>
+        <p>This is the body4.</p>
+    </main>
+    <div>
+        <h1>Actions</h1>
+    </div>
+    <div>
+        <div class="div_column">
+            <h3 id="SlideInBtn">SlideIn</h3>
+            <div class="box1" id="SlideIn"></div>
+        </div>
+        <div class="div_column">
+            <h3 id="SlideDownBtn">SlideUp</h3>
+            <div class="box1" id="SlideDown"></div>
+        </div>
+        <div class="div_column" >
+            <h3 id="FadeInBtn">FadeIn</h3>
+            <div class="box1" id="FadeIn" style="display: none;"></div>
+        </div>
+        <div class="div_column">
+            <h3 id="FadeOutBtn">FadeOut</h3>
+            <div class="box1" id="FadeOut"></div>
+        </div>
+        <div class="div_column">
+            <h3 id="DblClickBtn">Double Click</h3>
+            <div class="box1" id="DblClick"></div>
+        </div>
+        <div class="div_column">
+            <h3 id="AnimateBtn">Animate</h3>
+            <div class="box1" id="Animate"></div>
+        </div>
+        <div class="div_column">
+            <h3 id="ToggleBtn1">Slide Togggle</h3>
+            <div class="box1" id="SlideTogggle"></div>
+        </div>
+        <div class="div_column">
+            <h3 id="ToggleBtn2">Fade Togggle</h3>
+            <div class="box1" id="FadeTogggle"></div>
+        </div>
+        
+    </div>
+
+</body>
+<script src="jquery-3.7.0.min.js">
+
+</script>
+
+<script>
+    console.log("We are testing");
+    $(document).ready(function () {
+        $('.box').click(function () {
+            console.log("click")
+            $(this).hide(1000);
+        });
+
+
+        $('p').click(function(){
+        $(this).hide();
+        });
+
+        $("#SlideInBtn").click(function(){
+            $("#SlideIn").slideDown();
+        });
+
+        $('#SlideIn').click(function(){
+            $(this).slideUp();
+        });
+
+        $("#SlideDownBtn").click(function(){
+            $("#SlideDown").slideUp();
+        });
+
+        $("#FadeInBtn").click(function(){
+            $("#FadeIn").fadeIn(2000);
+        });
+
+        $("#FadeOutBtn").click(function(){
+            $("#FadeOut").fadeOut(2000);
+        });
+
+        $("#ToggleBtn1").click(function(){
+            $("#SlideTogggle").slideToggle(1000);
+        });
+
+        $("#ToggleBtn2").click(function(){
+            $("#FadeTogggle").fadeToggle(1000);
+        });
+
+        $("#DblClickBtn").dblclick(function(){
+            $("#DblClick").animate({
+            opacity:0.5,
+            width:'300px',
+            height:'300px',
+        }, 3000);
+        });
+
+        $("#AnimateBtn").click(function(){
+            $("#Animate").animate({
+            width:'200px',
+            height:'300px',
+        }, 1000);
+        });
+        
+    });
+</script>
+<!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+</html>
